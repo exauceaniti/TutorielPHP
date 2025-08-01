@@ -42,3 +42,11 @@ function demander_un_creneaux($mot = "Entrer un crenneaux")
     }
     return $creneaux;
 }
+
+// Point d'entrée du programme
+echo "=== Gestion des créneaux ===\n";
+$liste_creneaux = demander_un_creneaux();
+echo "Voici les créneaux que vous avez entrés :\n";
+foreach ($liste_creneaux as $index => $creneau) {
+    echo "- Créneau " . ($index + 1) . " : de {$creneau[0]}h à {$creneau[1]}h\n";
+}
