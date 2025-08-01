@@ -1,5 +1,6 @@
 <?php
 
+
 while (true) {
     $debut = (int)readline('Heur de l\'ouverture: ');
     $fin = (int)readline('Heur de fermeture: ');
@@ -19,7 +20,6 @@ foreach ($creneaux as $creneau) {
 }
 
 
-/*
 $heur = (int)readline('A quelle heur voulez vous visiter le magasin: ');
 $creneauTrouver = false;
 
@@ -34,4 +34,3 @@ if ($creneauTrouver) {
 } else {
     echo "Desoler le magasin sera fermer";
 }
-*/
